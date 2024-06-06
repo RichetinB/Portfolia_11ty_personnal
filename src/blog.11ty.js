@@ -14,12 +14,15 @@ exports.data = {
             .map((post, i) => {
               return /*html*/ `
                 <li class="post" style="--delay: ${i / 4}s">
-                  <a href="${post.url}">${post.data.title}</a>
+                  <a class="btn_animation" href="${post.url}">${post.data.title}</a>
                 </li>
               `;
             })
             .join("")}
         </ul>      
       </div>
+
+      <script src="/assets/script/blog.js">
+      </script>
     `;
   };
