@@ -24,6 +24,14 @@ exports.render = (data) => {
                 >
                   Blog
                 </a>
+                <a
+                  href="/portfolio"
+                  aria-current="${
+                    data.page.url.includes("/portfolio/") ? "page" : "false"
+                  }"
+                >
+                  Mon CV
+                </a>
               </nav>
             </header>
             <main>

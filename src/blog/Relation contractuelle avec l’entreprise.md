@@ -5,7 +5,7 @@ date: 2024-05-06
 
 ## Tuteur de stage
 
-- Aurélien Hivonnet
+- Mon tuteur de stage est Aurélien Hivonnet
 
 ## Confidentialité
 

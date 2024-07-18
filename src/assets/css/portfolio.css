@@ -1,0 +1,46 @@
+main {
+    min-height: 100%;
+    display: grid;
+    place-content: center;
+  }
+  
+  .big-sell {
+    display: grid;
+    grid-row-gap: 0.25rem;
+    justify-items: center;
+    text-align: center;
+    font-size: 2rem;
+    font-size: clamp(1rem, 1rem + 2vw, 2rem);
+  }
+  
+  .big-sell > * {
+    margin: 0;
+    line-height: 1;
+  
+    /* allows us to stagger animation by setting different values as inline styles */
+    --delay: 0s;
+    /* keyframe animations defined in base.css */
+    animation: fadeIn 2s var(--delay) forwards, slideIn 1s var(--delay) forwards;
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  
+  .big-sell > h1 {
+    font-weight: 900;
+  }
+  
+
+
+
+.pdf-container {
+    border: 4px solid gray; /* Bordure grise légère */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet de profondeur */
+    width: 80%; /* Largeur fixe ou utilise `max-width` pour s'adapter à l'écran */
+    margin: 0 auto; /* Centre l'élément horizontalement */
+    overflow: hidden; /* Cache le débordement du contenu PDF */
+  }
+  
+  .pdf-container object, .pdf-container iframe {
+    width: 100%; /* Occupe toute la largeur du conteneur */
+    height: 600px; /* Hauteur fixe du conteneur du PDF */
+  }
